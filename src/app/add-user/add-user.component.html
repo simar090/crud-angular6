@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Employee</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input formControlName="gender" placeholder="Gender" name="gender" class="form-control" id="gender">
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input formControlName="dob" placeholder="Date of Birth" name="dob" class="form-control" id="dob">
+    </div>
+
+    <div class="form-group">
+      <label for="dept">Department:</label>
+      <input formControlName="dept" placeholder="Department" name="dept" class="form-control" id="dept">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+    <button class="btn btn-default" (click)="viewUser()"> View Employees</button>
+  </form>
+</div>
